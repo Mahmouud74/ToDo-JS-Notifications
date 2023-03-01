@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./public/styles/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="main">
+            <h1>to do List</h1>
+            <div class="tasks" id="taskss">
+            </div>
+            <div class="form-container">
+                <div class="form-header">
+                    <h3>
+                        Add new to do
+                    </h3>
+                </div>
+
+                <form action="">
+                    <div class="inputsContainer">
+                        <label for="taskTitle" class="taskTitleLable">task title</label>
+                        <input type="text" id="taskTitle" class="taskTitleinput" placeholder="taskTitle">
+                    </div>
+                    <div class="inputsContainer">
+                        <label for="hours" class="timeLabel">Hours (hh)</label>
+                        <input type="number" id="hours" class="timeInput" placeholder="HOURS">
+                        <label for="minutes" class="timeLabel">Minutes (mm)</label>
+                        <input type="number" id="minutes" class="timeInput" placeholder="MINUTES">
+                    </div>
+                    <div class="inputsContainer">
+                        <label for="day" class="dateLabel">Day:</label>
+                        <label for="month" class="dateLabel">Month:</label>
+                        <label for="year" class="dateLabel">Year:</label>
+                        <input type="number" class="dateInput" placeholder="DAY" name="day" id="day">
+                        <input type="number" class="dateInput" placeholder="MONTH" name="month" id="month">
+                        <input type="number" class="dateInput" placeholder="YEAR" name="year" id="year">
+                    </div>
+                    <div class="button-container">
+                        <input type="button" id="add" value="Add Task">
+                    </div>
+                </form>
+
+            </div>
+            <input type="button" value="notify" id="request" class="js-notify-btn">
+        </div>
+
+    </div>
+    <script src="./public/scripts/idb.js"></script>
+    <script src="./public/scripts/script.js"></script>
+</body>
+</html>
